@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebin V — Resume | Graphic Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+      .page { box-shadow: none !important; margin: 0 !important; max-width: 100% !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4">
+
+  <!-- Printable Action Bar -->
+  <div class="max-w-4xl mx-auto mb-6 flex justify-between items-center no-print">
+    <a href="index.html" class="text-sm font-semibold text-blue-400 hover:underline flex items-center gap-1">
+      ← Back to Portfolio Website
+    </a>
+    <button onclick="window.print()" class="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold shadow-lg transition-all">
+      Print / Download PDF
+    </button>
+  </div>
+
+  <!-- Resume Sheet Page -->
+  <div class="page max-w-4xl mx-auto bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl space-y-8">
+    
+    <!-- Header -->
+    <div class="border-b border-slate-800 pb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div>
+        <h1 class="text-4xl font-extrabold text-white tracking-tight">BEBIN V</h1>
+        <p class="text-xl font-semibold text-blue-400 mt-1">Graphic Designer | Fresher</p>
+        <p class="text-sm text-slate-400 mt-1">B.Tech Artificial Intelligence & Data Science (2026)</p>
+      </div>
+
+      <div class="text-xs text-slate-300 space-y-1.5 font-mono bg-slate-950 p-4 rounded-2xl border border-slate-800">
+        <p>📧 Email: <a href="mailto:bebinbebi46@gmail.com" class="text-white hover:underline">bebinbebi46@gmail.com</a></p>
+        <p>🎓 Graduation: <span class="text-white">2026</span></p>
+        <p>📍 Location: <span class="text-white">Open to Remote & On-site</span></p>
+      </div>
+    </div>
+
+    <!-- Career Objective -->
+    <div>
+      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Professional Profile</h2>
+      <p class="text-slate-300 text-sm leading-relaxed">
+        Passionate and detail-oriented Graphic Designer with an academic foundation in Artificial Intelligence & Data Science. Skilled in visual branding, typography, poster design, social media content, and digital UI layout design. Merges analytical problem-solving with artistic creative direction to produce compelling visual assets for brands and agencies.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div>
+      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Education</h2>
+      <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex justify-between items-start">
+        <div>
+          <h3 class="text-base font-bold text-white">Bachelor of Technology (B.Tech)</h3>
+          <p class="text-sm text-slate-300">Artificial Intelligence & Data Science</p>
+        </div>
+        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold font-mono">2022 — 2026</span>
+      </div>
+    </div>
+
+    <!-- Core Skills Grid -->
+    <div>
+      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Core Design Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Graphic Design</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Branding & Identity</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Logo Design</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Poster Design</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Social Media Design</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Typography</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Photo Manipulation</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">UI Visual Design</div>
+      </div>
+    </div>
+
+    <!-- Software & Tools -->
+    <div>
+      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Tools & Applications</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
+          <p class="font-bold text-white text-sm">Photoshop</p>
+          <p class="text-[10px] text-slate-400">Photo Composite</p>
+        </div>
+        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
+          <p class="font-bold text-white text-sm">Figma</p>
+          <p class="text-[10px] text-slate-400">UI & Prototyping</p>
+        </div>
+        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
+          <p class="font-bold text-white text-sm">Canva</p>
+          <p class="text-[10px] text-slate-400">Social Templates</p>
+        </div>
+        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
+          <p class="font-bold text-white text-sm">CapCut</p>
+          <p class="text-[10px] text-slate-400">Motion Graphics</p>
+        </div>
+        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
+          <p class="font-bold text-white text-sm">Premiere Pro</p>
+          <p class="text-[10px] text-slate-400">Video Editing</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Creative Workflow -->
+    <div>
+      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Creative Workflow</h2>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-2 text-center text-xs">
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">01 DISCOVER</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">02 RESEARCH</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">03 IDEATE</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">04 DESIGN</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">05 REFINE</div>
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">06 DELIVER</div>
+      </div>
+    </div>
+
+    <!-- Footer Signoff -->
+    <div class="border-t border-slate-800 pt-6 flex justify-between items-center text-xs text-slate-400">
+      <p>© 2026 Bebin V. Portfolio Resume Document.</p>
+      <p>References and design samples available upon request.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
