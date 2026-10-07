@@ -5,18 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bebin V — Resume | Graphic Designer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
     @media print {
       .no-print { display: none !important; }
-      body { background: white !important; color: black !important; }
-      .page { box-shadow: none !important; margin: 0 !important; max-width: 100% !important; }
+      body { background: white !important; color: black !important; padding: 0 !important; }
+      .page { box-shadow: none !important; border: none !important; margin: 0 !important; max-width: 100% !important; padding: 2rem !important; }
+      .text-slate-300, .text-slate-400 { color: #334155 !important; }
+      .bg-slate-900, .bg-slate-950 { background-color: #ffffff !important; }
+      .border-slate-800, .border-slate-700 { border-color: #e2e8f0 !important; }
+      .text-white { color: #0f172a !important; }
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4">
+<body class="bg-slate-950 text-slate-100 min-h-screen py-8 px-4">
 
   <!-- Printable Action Bar -->
   <div class="max-w-4xl mx-auto mb-6 flex justify-between items-center no-print">
@@ -24,107 +28,179 @@
       ← Back to Portfolio Website
     </a>
     <button onclick="window.print()" class="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold shadow-lg transition-all">
-      Print / Download PDF
+      Print / Save PDF
     </button>
   </div>
 
   <!-- Resume Sheet Page -->
   <div class="page max-w-4xl mx-auto bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl space-y-8">
     
-    <!-- Header -->
-    <div class="border-b border-slate-800 pb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-      <div>
-        <h1 class="text-4xl font-extrabold text-white tracking-tight">BEBIN V</h1>
-        <p class="text-xl font-semibold text-blue-400 mt-1">Graphic Designer | Fresher</p>
-        <p class="text-sm text-slate-400 mt-1">B.Tech Artificial Intelligence & Data Science (2026)</p>
+    <!-- Top Header & Monogram -->
+    <div class="border-b border-slate-800 pb-6 flex justify-between items-start">
+      <div class="space-y-2">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">BEBIN V</h1>
+        <p class="text-xl font-bold text-indigo-400">Graphic Designer | Fresher</p>
+        <div class="flex flex-wrap items-center gap-3 text-xs md:text-sm text-slate-300 pt-1 font-medium">
+          <span>📞 9585392533</span>
+          <span>•</span>
+          <a href="mailto:bebinbebi46@gmail.com" class="text-white hover:underline">bebinbebi46@gmail.com</a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/bebin-v" target="_blank" class="text-blue-400 hover:underline">bebin-v</a>
+        </div>
       </div>
 
-      <div class="text-xs text-slate-300 space-y-1.5 font-mono bg-slate-950 p-4 rounded-2xl border border-slate-800">
-        <p>📧 Email: <a href="mailto:bebinbebi46@gmail.com" class="text-white hover:underline">bebinbebi46@gmail.com</a></p>
-        <p>🎓 Graduation: <span class="text-white">2026</span></p>
-        <p>📍 Location: <span class="text-white">Open to Remote & On-site</span></p>
+      <!-- B Nib Monogram Icon -->
+      <div class="w-16 h-16 rounded-2xl bg-indigo-950/80 border border-indigo-500/30 flex items-center justify-center text-indigo-400 font-extrabold text-2xl shadow-inner relative">
+        <span class="font-display font-extrabold text-3xl text-indigo-300">B</span>
+        <svg class="w-4 h-4 absolute bottom-2 right-2 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+          <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+        </svg>
       </div>
     </div>
 
-    <!-- Career Objective -->
+    <!-- 1. PROFESSIONAL SUMMARY -->
     <div>
-      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Professional Profile</h2>
-      <p class="text-slate-300 text-sm leading-relaxed">
-        Passionate and detail-oriented Graphic Designer with an academic foundation in Artificial Intelligence & Data Science. Skilled in visual branding, typography, poster design, social media content, and digital UI layout design. Merges analytical problem-solving with artistic creative direction to produce compelling visual assets for brands and agencies.
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">👤</div>
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Professional Summary</h2>
+      </div>
+      <p class="text-slate-300 text-sm leading-relaxed pl-8">
+        Creative and motivated Graphic Designer with a B.Tech background in Artificial Intelligence & Data Science. Passionate about visual communication, branding, typography, social media creatives, poster design, photo editing, and digital experiences. Detail-oriented fresher combining design thinking with a technology-driven approach to create clean, engaging, purposeful visuals.
       </p>
     </div>
 
-    <!-- Education -->
-    <div>
-      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Education</h2>
-      <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 flex justify-between items-start">
+    <!-- 2 Columns Layout: Core Skills & Tools -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-b border-slate-800 py-8">
+      
+      <!-- Core Skills -->
+      <div class="space-y-3">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">⭐</div>
+          <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Core Skills</h2>
+        </div>
+        <ul class="grid grid-cols-2 gap-2 text-xs text-slate-200 pl-8 list-disc list-inside">
+          <li>Graphic Design</li>
+          <li>Brand Identity</li>
+          <li>Logo Design</li>
+          <li>Poster Design</li>
+          <li>Social Media Design</li>
+          <li>Typography</li>
+          <li>Color Theory</li>
+          <li>Layout Design</li>
+          <li>Photo Editing</li>
+          <li>Visual Storytelling</li>
+          <li>Creative Direction</li>
+          <li>UI Visual Design</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="space-y-3">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">⚙️</div>
+          <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Tools</h2>
+        </div>
+        <ul class="space-y-2 text-xs text-slate-200 pl-8 font-medium">
+          <li class="flex items-center gap-2">🔹 <span>Canva</span></li>
+          <li class="flex items-center gap-2">🔹 <span>Figma</span></li>
+          <li class="flex items-center gap-2">🔹 <span>CapCut</span></li>
+          <li class="flex items-center gap-2">🔹 <span>Adobe Photoshop</span></li>
+          <li class="flex items-center gap-2">🔹 <span>Adobe Premiere Pro</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- 2 Columns Layout: Selected Projects & Education / Workflow / Strengths -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Left Column: Selected Projects -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">📁</div>
+          <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Selected Projects</h2>
+        </div>
+        <div class="space-y-3 pl-8 text-xs">
+          <div>
+            <p class="font-bold text-white">Brand Identity Concept</p>
+            <p class="text-slate-400">Logo direction, typography, color palette, and supporting brand visuals.</p>
+          </div>
+          <div>
+            <p class="font-bold text-white">Social Media Campaign</p>
+            <p class="text-slate-400">Modern social media creatives with consistent layouts and visual hierarchy.</p>
+          </div>
+          <div>
+            <p class="font-bold text-white">Poster Design Collection</p>
+            <p class="text-slate-400">Promotional poster concepts focused on typography, composition, imagery, and clear communication.</p>
+          </div>
+          <div>
+            <p class="font-bold text-white">Creative Photo Manipulation</p>
+            <p class="text-slate-400">Conceptual visual compositions using image editing, lighting, typography, and creative effects.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Education, Workflow, Strengths -->
+      <div class="space-y-6">
+        
+        <!-- Education -->
         <div>
-          <h3 class="text-base font-bold text-white">Bachelor of Technology (B.Tech)</h3>
-          <p class="text-sm text-slate-300">Artificial Intelligence & Data Science</p>
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">🎓</div>
+            <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Education</h2>
+          </div>
+          <div class="pl-8 text-xs">
+            <p class="font-bold text-white">B.Tech Artificial Intelligence & Data Science</p>
+            <p class="text-slate-300">St. Xavier's Catholic College of Engineering</p>
+            <p class="text-indigo-400 font-mono mt-0.5">2022 — 2026</p>
+          </div>
         </div>
-        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold font-mono">2022 — 2026</span>
+
+        <!-- Creative Workflow -->
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">🔄</div>
+            <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Creative Workflow</h2>
+          </div>
+          <p class="pl-8 text-xs font-mono text-slate-300">
+            Discover ➔ Research ➔ Ideate ➔ Design ➔ Refine ➔ Deliver.
+          </p>
+        </div>
+
+        <!-- Strengths -->
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">⚡</div>
+            <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Strengths</h2>
+          </div>
+          <p class="pl-8 text-xs text-slate-300 leading-relaxed">
+            Creative Thinking, Attention to Detail, Visual Communication, Adaptability, Problem Solving, Willingness to Learn.
+          </p>
+        </div>
+
       </div>
+
     </div>
 
-    <!-- Core Skills Grid -->
-    <div>
-      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Core Design Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Graphic Design</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Branding & Identity</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Logo Design</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Poster Design</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Social Media Design</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Typography</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">Photo Manipulation</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-200">UI Visual Design</div>
+    <!-- Career Objective -->
+    <div class="border-t border-slate-800 pt-6">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs font-bold">🎯</div>
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400">Career Objective</h2>
       </div>
+      <p class="text-slate-300 text-xs leading-relaxed pl-8">
+        To begin my career as a Graphic Designer where I can apply my creativity, design skills, and technology background to create meaningful visual solutions while continuously developing my professional design expertise.
+      </p>
     </div>
 
-    <!-- Software & Tools -->
-    <div>
-      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Tools & Applications</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
-          <p class="font-bold text-white text-sm">Photoshop</p>
-          <p class="text-[10px] text-slate-400">Photo Composite</p>
-        </div>
-        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
-          <p class="font-bold text-white text-sm">Figma</p>
-          <p class="text-[10px] text-slate-400">UI & Prototyping</p>
-        </div>
-        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
-          <p class="font-bold text-white text-sm">Canva</p>
-          <p class="text-[10px] text-slate-400">Social Templates</p>
-        </div>
-        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
-          <p class="font-bold text-white text-sm">CapCut</p>
-          <p class="text-[10px] text-slate-400">Motion Graphics</p>
-        </div>
-        <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 text-center">
-          <p class="font-bold text-white text-sm">Premiere Pro</p>
-          <p class="text-[10px] text-slate-400">Video Editing</p>
-        </div>
+    <!-- Languages & Footer -->
+    <div class="border-t border-slate-800 pt-6 flex flex-wrap justify-between items-center text-xs text-slate-400 gap-4">
+      <div>
+        <span class="font-bold text-white uppercase text-[10px] tracking-wider text-indigo-400">Languages:</span>
+        <span class="text-slate-200 ml-2 font-medium">English, Tamil</span>
       </div>
-    </div>
-
-    <!-- Creative Workflow -->
-    <div>
-      <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Creative Workflow</h2>
-      <div class="grid grid-cols-2 md:grid-cols-6 gap-2 text-center text-xs">
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">01 DISCOVER</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">02 RESEARCH</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">03 IDEATE</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">04 DESIGN</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">05 REFINE</div>
-        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-bold text-slate-200">06 DELIVER</div>
-      </div>
-    </div>
-
-    <!-- Footer Signoff -->
-    <div class="border-t border-slate-800 pt-6 flex justify-between items-center text-xs text-slate-400">
-      <p>© 2026 Bebin V. Portfolio Resume Document.</p>
-      <p>References and design samples available upon request.</p>
+      <p>© 2026 Bebin V. Official Graphic Designer Resume.</p>
     </div>
 
   </div>
