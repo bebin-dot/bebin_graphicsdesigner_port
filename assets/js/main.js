@@ -119,18 +119,7 @@ function closeProjectModal() {
   document.body.style.overflow = 'auto';
 }
 
-/* Global Resume Modal Functions */
-function openResumeModal() {
-  const modal = document.getElementById('resume-modal');
-  modal.classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-}
 
-function closeResumeModal() {
-  const modal = document.getElementById('resume-modal');
-  modal.classList.add('hidden');
-  document.body.style.overflow = 'auto';
-}
 
 /* Contact Form Submit Handler */
 function handleContactSubmit(e) {
